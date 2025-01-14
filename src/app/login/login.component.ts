@@ -14,7 +14,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit{
 
   loginForm!: FormGroup;
-  hide = signal(true);
+
   alertMessage: any;
   showModal = false; //show model is control flag that control the model is visible or not
 
@@ -26,27 +26,13 @@ export class LoginComponent implements OnInit{
     })
   }
 
-  toggleModal() { //method toggles the visibility of the modal
-    this.showModal = !this.showModal;
-  }
-  
-  
-  
-  
+
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
 
 
-  onSignup() {
-    this.router.navigate(["/signup"])
-    }
-    onForgot() {
-    throw new Error('Method not implemented.');
-    }
-    clickEvent($event: MouseEvent) {
-    throw new Error('Method not implemented.');
-    }
+
     onSubmit() {
     this.router.navigate(["/dashboard"])
     }
