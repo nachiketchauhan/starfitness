@@ -25,6 +25,7 @@ import { MembershipComponent } from './membership/membership.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatTreeModule} from '@angular/material/tree';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { MatTreeModule} from '@angular/material/tree';
     DashboardComponent,
     HeaderComponent,
     FooterComponent,
-    MembershipComponent
+    MembershipComponent,
+    SignupComponent
    
   ],
   imports: [
@@ -55,6 +57,7 @@ import { MatTreeModule} from '@angular/material/tree';
     AppRoutingModule,
     ReactiveFormsModule,
     FontAwesomeModule,
+    
     ],
   providers: [
     provideClientHydration(withEventReplay()),

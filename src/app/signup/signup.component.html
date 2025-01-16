@@ -1,0 +1,28 @@
+<div class="spacebetween"><div><mat-card class="card">
+    <mat-card-content class="mat-card-content">
+        <form [formGroup]="signForm">
+            <mat-form-field style="margin-top: 20px;">
+                <mat-label>USERNAME</mat-label>
+                <input matInput formControlName="username">
+                <mat-icon matSuffix>account_circle</mat-icon>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>PASSWORD</mat-label>
+                <input matInput type="password" formControlName="password" />
+                <mat-icon matSuffix> vpn_key</mat-icon>
+            </mat-form-field>     
+            <section>
+                <div class="spacebetween">
+                    <div> 
+                        <button style="background-color: #C8DD60; color: black;" mat-flat-button 
+                         >Submit</button>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </mat-card-content>
+</mat-card></div>
+<div>
+<img src="../../assets/login-image.png">
+</div>
+</div>
