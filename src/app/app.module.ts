@@ -12,23 +12,35 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import {MatMenuModule} from '@angular/material/menu';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { MembershipComponent } from './membership/membership.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatTreeModule} from '@angular/material/tree';
 
 
 @NgModule({
   declarations: [
+    
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    HeaderComponent,
+    FooterComponent,
+    MembershipComponent
    
   ],
   imports: [
+    BrowserAnimationsModule,
+    MatTreeModule,
     MatInputModule,
     MatButtonModule,
     MatCardModule,
@@ -42,7 +54,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-  ],
+    FontAwesomeModule,
+    ],
   providers: [
     provideClientHydration(withEventReplay()),
     provideAnimationsAsync()
