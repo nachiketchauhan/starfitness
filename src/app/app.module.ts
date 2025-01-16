@@ -18,16 +18,29 @@ import { AppComponent } from './app.component';
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { MembershipComponent } from './membership/membership.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatTreeModule} from '@angular/material/tree';
 
 
 @NgModule({
   declarations: [
+    
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent,
+    HeaderComponent,
+    FooterComponent,
+    MembershipComponent
    
   ],
   imports: [
-    
+    BrowserAnimationsModule,
+    MatTreeModule,
     MatInputModule,
     MatButtonModule,
     MatCardModule,
@@ -41,8 +54,8 @@ import { LoginComponent } from './login/login.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FontAwesomeModule ,
-  ],
+    FontAwesomeModule,
+    ],
   providers: [
     provideClientHydration(withEventReplay()),
     provideAnimationsAsync()
