@@ -12,7 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import {MatMenuModule} from '@angular/material/menu';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -27,6 +27,7 @@ import { LoginComponent } from './login/login.component';
    
   ],
   imports: [
+    
     MatInputModule,
     MatButtonModule,
     MatCardModule,
@@ -40,6 +41,7 @@ import { LoginComponent } from './login/login.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FontAwesomeModule ,
   ],
   providers: [
     provideClientHydration(withEventReplay()),

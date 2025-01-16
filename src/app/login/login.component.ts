@@ -1,6 +1,6 @@
 import { Component, OnInit, signal } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { Router } from '@angular/router';
 
 
@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent implements OnInit{
-
+  faCoffee = faCoffee;
   loginForm!: FormGroup;
   hide = signal(true);
   alertMessage: any;
